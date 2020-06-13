@@ -14,13 +14,11 @@
 	src: url(../fonts/BrandonGrotesque-Bold.ttf);
 	font-family: BrandonGrotesque-Bold;
 }
-
 body{
 	margin: 0;
 	padding: 0;
 	font-family: BrandonGrotesque-Regular; 
 }
-
 /*home start*/
 .home{
 	background: url(../images/background.jpg);
@@ -28,7 +26,6 @@ body{
 	background-size: cover;
     background-color: rgba(0,0,0,0.3);
     background-blend-mode: color;
-	/*background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../images/background.jpg);*/
 }
 header{
 	padding: 20px 0;
@@ -117,7 +114,7 @@ header{
 }
 /*home end*/
 /*services start*/
-.services1,.skills,.logos{
+.services1,.skills{
 	background-color: #ffffff;
 	padding: 65px 0;
 }
@@ -270,6 +267,10 @@ header{
 }
 /*clients end*/
 /*logos start*/
+.logos{
+	background-color: #ffffff;
+    padding: 30px 0;
+}
 .container3{
 	width: 60%;
 	margin: 0 auto;
@@ -277,12 +278,23 @@ header{
 }
 .wrapper{
 	float: left;
-	margin: 0 2.4%;
+    margin: 0 1%;
 }
 .wrapper img{
 	width: 100%;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+    transition-duration: 0.5s;  
 }
-/*logos start*/
+.wrapper img:hover{
+	border: 2px solid #898989;
+}
+.wrapper:first-child img{
+	padding: 10px 6px;
+}
+/*logos end*/
 /*team start*/
 .team{
 	background-color: #111111;
@@ -310,6 +322,12 @@ header{
 }
 .t_social img{
 	padding: 0 3px;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+.t_social img:hover{
+    background: #ffffff78;
+    border-radius: 3px;
 }
 .bottom p{
 	font-size: 20px;
@@ -341,12 +359,28 @@ header{
 }
 .rows img{
 	float: left;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	padding: 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;    
+}
+.rows img:hover{
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    background: #ffffff38;
 }
 .rows p{
 	font-size: 18px;
-	display: inline-block;
-    overflow: hidden;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
     margin: 0 0 40px 16px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.rows p:hover{
+	border-bottom: 1px solid #ffffff;
 }
 .right{
 	width: 50%;
@@ -364,6 +398,9 @@ input,textarea{
     border-radius: 5px;
     margin-bottom: 24px;
     padding: 15px 170px 15px 20px;
+}
+input,textarea:focus{
+	outline: 0;
 }
 /*contact end*/
 /*footer start*/
