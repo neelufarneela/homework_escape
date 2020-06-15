@@ -318,20 +318,65 @@ header{
 	margin-top: 0;
 }
 .t_social{
-	margin-bottom: 3%;
+	margin: 24px 0;
 }
-.t_social img{
-	padding: 0 3px;
-	cursor: pointer;
+.t_social ul{
+	padding: 0;
+}
+.t_social ul li{
+	list-style-type: none;
+    display: inline-block;
+}
+.t_social ul li a{
+	display: inline-block;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.t_social ul li a img{
+	width: 75%;
+}
+.twitter{
+	padding: 9px 4px 2px;
 	transition-duration: 0.5s;
 }
-.t_social img:hover{
-    background: #ffffff78;
-    border-radius: 3px;
+.twitter:hover{
+	background-color: #00aced;
+	border: 2px solid transparent;
+}
+.facebook{
+	padding: 7px 9px 1px;
+	transition-duration: 0.5s;
+}
+.facebook:hover{
+	background-color: #3b5998;
+	border: 2px solid transparent;
+}
+.pinterest{
+	padding: 5px 5px 0;
+	transition-duration: 0.5s;
+}
+.pinterest:hover{
+	background-color: #cb2028;
+	border: 2px solid transparent;
+}
+.google{
+	padding: 7px 4px 1px;
+	transition-duration: 0.5s;
+}
+.google:hover{
+	background-color: #d95232;
+	border: 2px solid transparent;
+}
+.bottom{
+	float: left;
 }
 .bottom p{
 	font-size: 20px;
 	text-align: center;
+	margin-top: 0;
+	padding: 0 80px;
 }
 /*team end*/
 /*contact start*/
@@ -354,37 +399,34 @@ header{
 	width: 50%;
 	float: left;
 }
-.rows{
-	overflow: hidden;
-}
-.rows img{
-	float: left;
-	border: 2px solid transparent;
-	border-radius: 5px;
-	padding: 5px;
-    cursor: pointer;
-    transition-duration: 0.5s;    
-}
-.rows img:hover{
-    border: 2px solid #ffffff;
-    border-radius: 3px;
-    background: #ffffff38;
-}
-.rows p{
-	font-size: 18px;
-    display: inline-block;
-    border-bottom: 1px solid transparent;
-    margin: 0 0 40px 16px;
-    padding-bottom: 3px;
-    cursor: pointer;
-    transition-duration: 0.5s;
-}
-.rows p:hover{
-	border-bottom: 1px solid #ffffff;
-}
 .right{
 	width: 50%;
 	float: right;
+}
+.left ul,.right ul{
+	overflow: hidden;
+	padding: 0;
+}
+.left ul li,.right ul li{
+	list-style-type: none;
+}
+.left ul li a,.right ul li a{
+	font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.left ul li a p,.right ul li a p{
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+	transition-duration: 0.5s;
+}
+.left ul li a p:hover,.right ul li a p:hover{
+	border-bottom: 1px solid #ffffff;
+}
+.wrapper2{
+	float: left;
+    margin-top: 20px;
+    margin-right: 18px;
 }
 .form{
 	width: 38%;
